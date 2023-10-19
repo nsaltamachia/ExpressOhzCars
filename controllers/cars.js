@@ -1,8 +1,10 @@
 const Car = require("../models/car");
 
 const index = (req, res) => {
-    res.send({ cars: Car.getAll() })
-
+    res.render("cars/index"), {
+        cars: Car.getAll(),
+        title: "All Cars",
+    }
 }
 
 

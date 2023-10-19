@@ -1,8 +1,12 @@
-<%- include("./partials/header") %>
+<%- include("../partials/header") %>
 
-<h1>All Cars</h1>
+<ul>
+    <% cars.forEach((car) => { %>
+        
+        <li>Make: <%= car.make %></li>
+        <li>Year: <%= car.year %></li>
+        <li>Year: <%= car.isUsed %></li>
+    <% }) %>
+</ul>
 
-
-
-
-<%- include("./partials/footer") %>  
+<%- include("../partials/footer") %>  
